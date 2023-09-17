@@ -1,5 +1,5 @@
 class Zoomed {
-    constructor(img, w, h, id, parent, scaleDown = false) {
+    constructor(img, w, h, id, scaleDown = false) {
         // Create container
         this.elemet = document.createElement("div");
         this.elemet.style.width = w;
@@ -34,7 +34,6 @@ class Zoomed {
         this.elemet.appendChild(this.imgDiv);
         this.elemet.appendChild(this.zoomInButton);
         this.elemet.appendChild(this.zoomOutButton);
-        parent.appendChild(this.elemet);
 
         // Create event listeners
         // zoom in and out

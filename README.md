@@ -14,10 +14,10 @@ Bu sınıfı projenize dahil etmek için aşağıdaki adımları izleyebilirsini
 
 ```javascript
 // ZoomableImage sınıfını projeye dahil et
-const zoomableImage = new ZoomableImage("resim.jpg", "800px", "600px", "zoomed-container", document.body);
+const zoomableImage = new Zoomed("img/map.jpg", "600px", "600px", "zoomed-image-container", true);
 
 // Sınıfın öğelerini al
-const [container, imgDiv, img, zoomInButton, zoomOutButton] = zoomableImage.getElements();
+const [container, img_container, img, zoomInButton, zoomOutButton] = zoomableImage.getElements();
 
 // Belirli bir elemente ekle
 document.getElementById("my-container").appendChild(container);
@@ -39,10 +39,10 @@ To include this class in your project, follow these steps:
 
 ```javascript
 // Include the ZoomableImage class in the project
-const zoomableImage = new ZoomableImage("image.jpg", "800px", "600px", "zoomed-container", document.body);
+const zoomableImage = new Zoomed("img/map.jpg", "600px", "600px", "zoomed-image-container", true);
 
 // Get the elements of the class
-const [container, imgDiv, img, zoomInButton, zoomOutButton] = zoomableImage.getElements();
+const [container, img_container, img, zoomInButton, zoomOutButton] = zoomableImage.getElements();
 
 // Append to a specific element
 document.getElementById("my-container").appendChild(container);
